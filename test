@@ -6,8 +6,17 @@
 </head>
 <body>
  <div>
- <!-- Git Hub Test -->
+  <!-- Git Hub Test -->
   <p>Hello Git Hub!</p>
- </div>
+  <!--for loop_ this will loop through the product object and retrieve the images from the list and output an url -->
+   {% for image in product.images%}
+    <img src="{{images | img_url:'100x100'}}">
+   {%endfor%}
+   <p>
+    {% assign my_variable = "coffee" %}
+    {{ my_variable}}
+   </p>
+  </div>
 </body>
 </html>
+
